@@ -1,0 +1,315 @@
+/* Global Styles */
+.therapist_scheduler {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .therapist_scheduler h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #080bc1;
+  }
+  
+  .switch-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .switch-button {
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .switch-button.active {
+    background-color: #669de93c;
+  }
+  
+  .schedule-form-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .schedule-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .schedule-input-group input,
+  .schedule-input-group select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .schedule-input-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .schedule-input-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  .day-container {
+    margin-bottom: 20px;
+  }
+  
+  .day-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .day-container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .day-container ul li button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .day-container ul li button:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 710px) {
+    .input-group {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .input-group input,
+    .input-group select,
+    .input-group button {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .group-schedule-button {
+    background-image: linear-gradient(to right, #3b82f6, #2563eb, #1d4ed8);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .group-schedule-button:hover {
+    background-image: linear-gradient(to bottom right, #3b82f6, #2563eb, #1d4ed8);
+  }
+  
+  .group-schedule-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.5);
+  }
+  
+  /* Specific Styles for OneToOneAvailabilityForm */
+  .one-to-one-form-container {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .one-to-one-form-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .one-to-one-form-container .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .one-to-one-form-container .input-group input[type="text"],
+  .one-to-one-form-container .input-group input[type="time"],
+  .one-to-one-form-container .input-group select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .one-to-one-form-container .input-group button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .one-to-one-form-container .input-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  .one-to-one-form-container .day-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .one-to-one-form-container .day-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .one-to-one-form-container .day-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .one-to-one-form-container .day-container ul li {
+    margin-bottom: 5px;
+  }
+  
+  .one-to-one-form-container .day-container ul li button {
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .one-to-one-form-container .day-container ul li button:hover {
+    background-color: #c82333;
+  }
+  
+  .one-to-one-form-container .day-container.highlighted {
+    background-color: #f9f9f9;
+  }
+  
+  /* Specific Styles for GroupAvailabilityForm */
+  .group-form-container {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .group-form-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .group-form-container .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .group-form-container .input-group input[type="text"],
+  .group-form-container .input-group input[type="time"],
+  .group-form-container .input-group select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .group-form-container .input-group button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .group-form-container .input-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  .group-form-container .day-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .group-form-container .day-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .group-form-container .day-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .group-form-container .day-container ul li {
+    margin-bottom: 5px;
+  }
+  
+  .group-form-container .day-container ul li button {
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .group-form-container .day-container ul li button:hover {
+    background-color: #c82333;
+  }
+  
+  .group-form-container .day-container.highlighted {
+    background-color: #f9f9f9;
+  }
+  

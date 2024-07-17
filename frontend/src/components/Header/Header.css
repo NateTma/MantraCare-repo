@@ -1,0 +1,152 @@
+.custom-header {
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.custom-flex {
+  display: flex;
+  align-items: center;
+}
+
+.custom-justify-between {
+  justify-content: space-between;
+}
+
+.custom-logo__text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}
+
+.custom-nav {
+  display: flex;
+  align-items: center;
+}
+
+.custom-nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-nav__item {
+  position: relative;
+}
+
+.custom-nav__link {
+  text-decoration: none;
+  color: #333;
+  padding: 1rem;
+  display: block;
+}
+
+.custom-nav__link:hover,
+.custom-nav__link.active {
+  color: #007bff;
+}
+
+.custom-nav__dropdown-link {
+  display: flex;
+  align-items: center;
+}
+
+.custom-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.custom-dropdown--open {
+  display: block;
+}
+
+.custom-dropdown__item {
+  white-space: nowrap;
+}
+
+.custom-dropdown__link {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.custom-dropdown__link:hover {
+  background-color: #f8f9fa;
+}
+
+.custom-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.custom-btn--primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.custom-btn--primary:hover {
+  background-color: #0056b3;
+}
+
+.custom-menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.custom-nav--open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .custom-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-nav.custom-nav--open {
+    display: flex;
+  }
+
+  .custom-nav__list {
+    flex-direction: column;
+  }
+
+  .custom-nav__item {
+    width: 100%;
+  }
+
+  .custom-nav__link {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .custom-menu-icon {
+    display: block;
+  }
+}
