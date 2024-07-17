@@ -1,5 +1,11 @@
 # MantraCare-repo
-Latest version of our online therapy service
+Latest version of our online therapy service.
+
+Made by, 
+1. Leul Zelalem: [LeulZelalem28](https://github.com/LeulZelalem28)
+2. Bahiru Birhanu
+3. Maereg Gete, and
+4. Natenael Tamirat, the owner of this repo
 
 You can run this on your vscode terminal, or something similar to it.
 
